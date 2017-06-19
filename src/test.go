@@ -29,7 +29,7 @@ type OneArgFunc func(int) int
 //}
 
 func main() {
-	fmt.Println("1.1")
+	fmt.Println("1.1a")
 	//Exercise1
 	//fmt.Println("isEven(1) must be false : ",isEven(1))
 	//fmt.Println("isEven(2) must be true : ",isEven(2))
