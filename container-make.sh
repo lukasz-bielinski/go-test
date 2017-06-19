@@ -3,9 +3,9 @@
 set -x
 
 CONTAINER_NAME=lukaszbielinski/aela
-CONTAINER_TAG=2
+#CONTAINER_TAG=2
 # CONTAINER_NAME=${1}
-# CONTAINER_TAG=${2}
+CONTAINER_TAG=${1}
 
 PROJECT_NAME='github.com/lukaszbielinski/go-test'
 PROJECT_DIR="${PWD}/src"
