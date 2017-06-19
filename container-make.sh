@@ -8,7 +8,7 @@ CONTAINER_TAG=2
 # CONTAINER_TAG=${2}
 
 PROJECT_NAME='github.com/lukaszbielinski/go-test'
-PROJECT_DIR="${PWD}"
+PROJECT_DIR="${PWD}/src"
 VENDOR_DIR='Godeps/_workspace'
 
 CONTAINER_GOPATH='/go'
@@ -22,7 +22,7 @@ docker run --rm \
         -e GODEBUG=netdns=go \
         -w "${CONTAINER_PROJECT_DIR}" \
         golang:1.8.3-alpine \
-        go build -v -o test test.go
+        go build -v -o bin/test test.go
 
 # Disable this to strip the debug information from the binary and shave off about 4Mb making the binary from 12mb to 8mb
 # It means this can't be debugged by delve, gdb et al. but the side is even better
